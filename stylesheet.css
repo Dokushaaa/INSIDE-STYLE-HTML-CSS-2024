@@ -989,6 +989,9 @@ section:first-of-type{
     grid-row-gap: 5rem;
     padding: 3.5rem 5rem 0 0;
 }
+.buildingDesigns .building__entry .building__entry_content:first-child{
+    background-color: trs;
+}
 .buildingDesigns .building__entry .buildingLabels{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1079,6 +1082,262 @@ height: 25rem;
   .recentprjcatalog .recentprjcatalog__wrapper .recentprjcatalog__card .recentprjcatalog__details{
     padding: 1rem;
   }
+  .building__entry_categories .hidden_categories{
+    display: none;
+  }
+  @media screen and (max-width: 520px){
 
+    /* Updates Page */
+    .updatesPage{
+        max-width:500px;
+        width: 100%;
+        
+    }
+    .updatesPage .updatesPage__entry{
+        display:grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-left:2.5rem;
+        padding-right:2.5rem;
+        padding: 0;
+        gap:2rem;
+    }
+    .updatesPage .updatesPage__entry .updatesPage__entry_left h2{
+        align-items: center;
+        padding-left: 10;
+        font-size: 3rem;
+    }
+    .updatesPage .updatesPage__entry .updatesPage__entry_left p{
+        padding-left: 1rem;
+        padding-right:5rem;
+        align-items: center;
+        padding-left: 5rem;
+    }
+    updatesPage .updatesPage__entry .updatesPage__entry_right{
+        margin-left: 15rem;
+    }
+    .updatesPage .updatesPage__entry .updatesPage__entry_right img{
+        padding-left:5rem;
+        padding-right:5rem;
+        min-width: 80%;
+        min-height: 50%;
+        height: 50rem;
+    }
 
+    /* BLDG designs */
+    .buildingDesigns .building__entry .building__entry_content{
+        display:grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-left: 7.5rem;
+    }
+    .buildingDesigns .building__entry .building__entry_content .building__entry_categories{
+        order: 9;
+    }
+    .buildingDesigns .building__entry .buildingLabels {
+        /* font-size: 10rem; */
+         /* margin-left:10rem; */
+        display: grid;
+        grid-template-columns: 2fr;
+        align-items: center;
+        text-align: center;
+    }
+    .buildingDesigns .building__entry .buildingLabels .categories{
+        display: none;
+    }
+    .building__entry_categories .hidden_categories{
+        display:flex;
+        /* margin-top: 5rem; */
+        align-items: center;
+        text-align: center;
+        padding-left: 5rem;
 
+    }
+    .building__entry_categories{
+        align-items: center;
+        text-align: center;
+    }
+    .recentprjcatalog{
+        padding:0;
+    }
+    .recentprjcatalog .recentprjcatalog__title{
+        padding:0;
+        align-items: center;
+        text-align: center;
+    }
+    .recentprjcatalog .recentprjcatalog__wrapper{
+        display: grid;
+        grid-template-columns:1fr;
+        justify-items: center;
+        
+    }
+    .recentprjcatalog .recentprjcatalog__wrapper .recentprjcatalog__card .recentprjcatalog__details{
+        padding-bottom: 5rem;
+    }
+}
+/* Contact Us page */
+.contactUsPage{
+    display: flex;
+    padding:25rem 20rem;
+}
+.contactUsPage .contactUsGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20rem;
+    grid-row-gap: 5rem;
+    padding: 5rem 5rem 0 0;
+}.contactUsPage .contactUsGrid .contactUsHead h1{
+    color: var(--clr-primary);
+    font-size: 8rem;
+    font-weight: 800;
+}
+.contactUsPage .contactUsGrid .contactUsHead p{
+    color: var(--clr-dark);
+    font-size: 2rem;
+    font-weight: 400;
+}
+.contactUsPage .contactUsGrid .contactUsHead .textField{
+    border: hidden;
+    border-bottom: 1px solid var(--clr-dark);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: var(--truculenta);
+    font-size: 2.5rem;
+}
+.contactUsPage .contactUsGrid .contactUsHead .textFieldLarge{
+    border: hidden;
+    border-bottom: 1px solid var(--clr-dark);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: var(--truculenta);
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+.contactUsPage .contactUsGrid .contactUsHead .textField:focus{
+    outline: none;
+}
+.contactUsPage .contactUsGrid .contactUsHead .textFieldLarge:focus{
+    outline:none;
+}
+.contactUsPage .contactUsGrid .contactUsHead .btn.bg--primary{
+    color: var(--clr-light);
+    letter-spacing: 0.5rem;
+    font-size: 7rem;
+    display: block;
+    width: 100%;
+    height: 5rem;
+    border: none;
+    background-color: var(--clr-dark);
+    font-weight: 800;
+    font-family: var(--truculenta);
+ 
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+.contactUsPage .contactUsGrid .contactUsBorder{
+    padding: 100px 100px 100px 20px;
+}
+.contactUsPage .contactUsGrid .contactUsBorder  .contactUsBorder1{
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    font-size: 2.5rem;
+    height: 425px;
+    
+    
+}
+.contactUsPage .contactUsGrid .contactUsBorder .contactUsBorder1 h2{
+    text-align: left;
+    padding-left: 50px;
+    padding-top:50px;
+    font-weight: 800;
+}
+.contactUsPage .contactUsGrid .contactUsBorder .contactUsBorder1 p{
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 25px;
+    font-weight: 500;
+}
+.contactUsPage .contactUsGrid .contactUsBorder .contactUsBorder1 i{
+    padding-right: 50px;
+    color: var(--clr-secondary);
+}
+
+@media screen and (max-width: 520px){
+    .contactUsPage{
+        padding: 25px;
+        align-self: center;
+    }
+ .contactUsPage .contactUsGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
+    padding: 35px 0;;
+ }
+ .contactUsPage .contactUsGrid .contactUsHead{
+   display: grid;
+   grid-template-columns: 1fr;
+   align-self: center;
+   align-items: center;
+ }
+ .contactUsPage .contactUsGrid .contactUsHead h1{
+    text-align: center;
+ }
+ .contactUsPage .contactUsGrid .contactUsHead p{
+    text-align: center;
+ }
+
+ .contactUsPage .contactUsGrid .contactUsHead .textField{
+    width: 425px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+
+ }
+ .contactUsPage .contactUsGrid .contactUsHead .textFieldLarge{
+    width: 425px;
+    height: 150px;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    
+ }
+ .contactUsPage .contactUsGrid .contactUsHead .btn.bg--primary{
+    color: var(--clr-light);
+    letter-spacing: 0.5rem;
+    font-size: 7rem;
+    display: block;
+    width: 100%;
+    height: 5rem;
+    border: none;
+    background-color: var(--clr-dark);
+    font-weight: 800;
+    font-family: var(--truculenta);
+    align-self: center;
+ 
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}.contactUsPage .contactUsGrid .contactUsBorder{
+    padding:0;
+}
+}
+@media screen and (max-width: 800px){
+    .contactUsPage .contactUsGrid .contactUsBorder .contactUsBorder1{
+        font-size: 2rem;
+        width: 425px;
+    }
+}
